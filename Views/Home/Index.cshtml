@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<h1>Report Viewer</h1>
+
+<button type="submit" name="OpenRDLC" id="btnreport">Open Report</button>
+<div class="container">
+    <h2>Report view</h2>
+    <div id="report">
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+       
+        $("#btnreport").click(function () {
+
+            location.href = "/PrintRDLC.aspx";
+        });
+    });
+</script>
